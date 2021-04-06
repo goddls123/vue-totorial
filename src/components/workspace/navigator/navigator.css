@@ -1,0 +1,165 @@
+.navigator{
+    width: 190px;
+    left: 10px;
+    top: 10px;
+    position: absolute;
+    z-index: 3;
+    height: calc(100% - 20px) !important;
+}
+.navigator.hide{
+    left: -190px;
+}
+.navigator .close-open{
+    float: right;
+    display: inline-block;
+    margin-top: 350px;
+    margin-right: -11px;
+    width: 11px;
+    height: 42px;
+    line-height: 38px;
+    text-align: center;
+    background-color: #e96780;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+.node-list{
+    margin-bottom: 4px;
+    height: 37px;
+    border: 1px solid #d0d0d0;
+    background-color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    width: calc(100% - 22px);
+    padding: 0 10px;
+}
+
+.node-list .edit{
+    display: none;
+    position: absolute;
+    margin-right: 15px;
+	width: 18px;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+    top: 8px;
+    right: 16px;
+    border-radius: 3px;
+    background-color: #f8c2cc;
+    z-index: 5;
+}
+.node-list .edit.on{
+    display: block;
+}
+
+.services{
+    height: calc(100% - 44px);
+    overflow-y: auto;
+    border: 1px solid #d0d0d0;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.selected-list-box{
+    width: 100%;
+    height: 100%;
+}
+
+.popup{
+    position: absolute;
+    top: 10px;
+    z-index: 100;
+    left: 196px;
+}
+.popup.hide{
+    left: -400px;
+}
+
+
+/* workflow */
+.workflows-wrap{
+    min-height: 29px;
+    border-bottom: 1px solid #d0d0d0;
+    padding: 10px;
+    text-align: left;
+}
+.workflow-list{
+    cursor: pointer;
+}
+.node-name{
+    font-size: 10px;
+    font-weight: 400;
+    color: #666;
+    vertical-align: top;
+}
+.services .title{
+    font-size: 13px;
+    font-weight: 700;
+    color: #010101;
+    display: flex;
+    justify-content: space-between;
+}
+.title .button{
+    display: flex;
+}
+.title .button div{
+    width: 19px;
+    text-align: center;
+}
+.title .button .add-list{
+    margin-right: 5px;
+}
+.title .button div:hover{
+    background-color: #eceef1;
+}
+.title .button .btn-add-list{
+    text-align: center;
+}
+
+.workflow-list-wrap{
+    margin-top: 10px;
+    margin-left: -10px;
+}
+.workflow-list-wrap .workflow{
+    font-size: 12px;
+    color: #010101;
+    padding: 6px 7px 6px 17px;
+    margin-right: -10px;
+    display: flex;
+    justify-content: space-between;
+	cursor: pointer;
+}
+.workflow-list-wrap .workflow:hover{
+    background-color: #eceef1;
+}
+.workflow-list-wrap .workflow:hover .edit-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.workflow-list-wrap .edit-item{
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: top;
+    margin: -2px 0 0 -1px;
+    display: none;
+}
+.workflow-list-wrap .edit-item:hover{
+    background-color: #f8c2cc;
+}
+/* beans */
+.beans-wrap{
+    min-height: 29px;
+    border-bottom: 1px solid #d0d0d0;
+    padding: 10px;
+    text-align: left;
+}
+.beans-list{
+    cursor: pointer;
+}

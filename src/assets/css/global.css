@@ -1,0 +1,274 @@
+@font-face {
+    font-family: 'Roboto';
+    font-weight: normal;
+    src: local('Roboto Regular'),
+    url('../font/Roboto/Roboto-Regular.ttf') format('truetype'),
+    url('../font/Roboto/Roboto-Regular.ttf') format('truetype'),
+    url('../font/Roboto/Roboto-Regular.ttf') format('truetype');
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+  }
+  
+  @font-face {
+    font-family: 'Noto Sans KR';
+    font-weight: normal;
+    src: local('Noto Sans KR Regular'),
+    url('../font/NotoSansKR/NotoSansKR-Regular.otf') format('opentype'),
+    url('../font/NotoSansKR/NotoSansKR-Regular.otf') format('opentype'),
+    url('../font/NotoSansKR/NotoSansKR-Regular.otf') format('opentype');
+  }
+
+  :root {
+    --border-lightgray: #e6e7e8;
+    --select-blue: #eaeff4;
+    --hover-lightgay: #f7f5f5;
+    --border-gray: #d8d9db;
+    --border-darkgray: #b4b5b5;
+    --main-blue: #3481cf;
+    --main-navy: #0e1b26;
+    --main-lightgray: #eeeeee;
+    --hover-gray: #ededee;
+    --main-gray: #e5e6e6;
+    --font-black: #222222;
+    --font-darkgray-999999: #666464;
+    --font-placeholder: #a9a9a9;
+    --main-red: #f46864;
+    --white: #ffffff;
+    
+    --dark_navy: #282951;
+    --main_orange: #ff803b;
+    --main_red: #d33030;
+    --font_darkgray: #626262; 
+  }
+   
+  * {
+    /* font-family: 'Roboto', 'Noto Sans KR', 'Nanum Square Round', 'Spopa Han Sans', 'Odin', 'Sans-serif'; */
+    font-family: 'Roboto', 'Noto Sans KR', 'Sans-serif';
+  }
+
+
+body {
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+a, a:hover, a:visited, a:active {
+    /* color: inherit; */
+    text-decoration: none;
+    outline: none;
+}
+
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+*::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+*::-webkit-scrollbar-thumb { 
+    background-color: #bbbbbb; 
+    border-radius:20px;
+}
+
+input[type] {
+    text-indent: 7px;
+    outline: none;
+    font-size: 13px;
+    background-color: #fff;
+}
+textarea {
+    outline: none;
+    font-size: 13px;
+}
+video {
+	outline: none;
+}
+button {
+	outline: none;
+}
+
+p,
+div,
+span,
+i,
+button,
+td,
+th,
+label {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover, 
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover, 
+select:-webkit-autofill:focus {
+  border: none;
+  -webkit-text-fill-color: #222;
+  -webkit-box-shadow: none;
+  transition: background-color 5000s ease-in-out 0s;    
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+iframe {
+	border: none;
+}
+
+/* 
+ *  Global Icons and Images
+ */
+ .icon-auth-completed {
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	background: url('../icon/join-complete.svg') no-repeat;
+}
+.icon-login-mail {
+  width: 17px;
+  height: 14px;
+  display: inline-block;
+  background: url('../icon/login-mail.png') no-repeat;
+  background-size: contain;
+}
+.on:focus-within > .icon-login-mail {
+  background: url('../icon/login-mail-on.png') no-repeat;
+  background-size: contain;
+}
+.icon-login-password {
+  width: 14px;
+  height: 16px;
+  display: inline-block;
+  background: url('../icon/login-password.png') no-repeat;
+  background-size: contain;
+}
+.on:focus-within > .icon-login-password {
+  background: url('../icon/login-password-on.png') no-repeat;
+  background-size: contain;
+}
+.btn-open-list {
+  width: 9px;
+  height: 6px;
+  display: inline-block;
+  background: url('../icon/btn-open-list.svg') no-repeat;
+}
+.btn-close-list {
+  width: 9px;
+  height: 6px;
+  display: inline-block;
+  background: url('../icon/btn-close-list.svg') no-repeat;
+}
+
+/* 
+ * Toast Icons
+ */
+ .icon-toast-info {
+    width: 22px;
+    height: 26px;
+    display: inline-block;
+    background: url('../icon/toast-info.svg') no-repeat;
+  }
+  .icon-toast-warn {
+    width: 24px;
+    height: 22px;
+    display: inline-block;
+    background: url('../icon/toast-warning.svg') no-repeat;
+  }
+  .icon-toast-error {
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    background: url('../icon/toast-error.svg') no-repeat;
+  }
+  .btn-toast-close {
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    background: url('../icon/btn-toast-close.svg') no-repeat;
+  }
+  
+  
+  /* 
+   * Select Box
+   */
+  .btn-open-dropbox {
+    width: 8px;
+    height: 5px;
+    display: inline-block;
+    background: url('../icon/btn-open-dropbox.svg') no-repeat;
+  }
+  .btn-open-mode {
+    width: 8px;
+    height: 4px;
+    display: inline-block;
+    background: url('../icon/btn-open-mode.svg') no-repeat;
+  }
+  .icon-checked-wh {
+    width: 9px;
+    height: 7px;
+    display: inline-block;
+    background: url('../icon/checked.svg') no-repeat;
+  }
+  .btn-open-dropbox-color {
+    width: 8px;
+    height: 5px;
+    display: inline-block;
+    background: url('../icon/btn-open-dropbox-color.svg') no-repeat;
+  }
+  .btn-edit-item {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background: url('../icon/btn-edit.svg') no-repeat;
+  } 
+  .btn-checked {
+    width: 9px;
+    height: 6px;
+    display: inline-block;
+    background: url('../icon/checked.svg') no-repeat;
+  }
+  .btn-close-popup {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background: url('../icon/btn-close-popup.svg') no-repeat;
+  }
+  .btn-add-list {
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    background: url('../icon/btn-add-list.png') no-repeat;
+  }
+
+  .btn-close-left-menu {
+    width: 8px;
+    height: 6px;
+    display: inline-block;
+    background: url('../icon/btn-close-left-menu.svg') no-repeat;
+  }
+  .btn-open-left-menu {
+    width: 9px;
+    height: 6px;
+    display: inline-block;
+    background: url('../icon/btn-open-left-menu.svg') no-repeat;
+    z-index: 1;
+  }

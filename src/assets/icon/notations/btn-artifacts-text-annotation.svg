@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+    <path fill="none" fill-rule="evenodd" d="M0 0h36v36H0V0z"/>
+    <text fill="#505050" font-family="American Typewriter" font-size="14" transform="matrix(1.22791 0 0 1.22791 15.387 25.236)">
+        T
+    </text>
+    <text font-family="American Typewriter" font-size="14" transform="matrix(1.22791 0 0 1.44302 9.544 23.33)">
+        [
+    </text>
+</svg>

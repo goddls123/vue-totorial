@@ -1,0 +1,58 @@
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.home{
+    display: flex;
+    width: 380px;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    align-self: center;
+    vertical-align: middle;
+}
+.title{
+    font-size: 70px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #e34160;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+.login{
+    height: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.5;
+    letter-spacing: normal;
+    text-align: center;
+    width: 100%;
+    border-radius: 25px;
+    background-color: #e34160;
+    color: #fff;
+    margin-bottom: 19px;
+    cursor: pointer;
+}
+
+.join{
+    width: 100%;
+    border-radius: 25px;
+    border: 1px solid #e34160;
+    background-color: #fff;
+    color: #e34160;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.5;
+    letter-spacing: normal;
+    text-align: center;
+    cursor: pointer;
+}

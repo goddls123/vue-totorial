@@ -1,0 +1,88 @@
+.new-beans{
+    width: 358px;
+    height: 228px;
+    padding: 12px 14px 17px 15px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0.9px 1.8px 2px 0 rgb(0 0 0 / 14%);
+    box-shadow: 0.9px 1.8px 2px 0 rgb(0 0 0 / 14%);
+    border: 1px solid #8b8b8b;
+    background-color: #fff;
+}
+.btn-close-popup{
+    cursor: pointer;
+}
+.header{
+    height: 33px;
+    display: flex;
+    justify-content: flex-end;
+}
+.container{
+    margin-bottom: 12px;
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+}
+.error-text{
+    font-size: 12px;
+    font-weight: bold;
+    color: #e34160;
+
+}
+.title{
+    font-size: 13px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 5px;
+}
+.input-box {
+    border: 1px solid #d0d0d0;
+    padding: 5.5px 0;
+}
+.input-box.disabled input{
+    background-color: #eceef1;
+}
+.input-box.disabled {
+    background-color: #eceef1;
+}
+.input-box input{
+    width: 100%;
+    font-size: 13px;
+    font-weight: 700;
+    border: none;
+    padding: 0;
+}
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.footer button{
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 13px;
+    padding: 8px 35px;
+    outline: none;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+}
+.delete{
+    margin-right: 14px;
+    background-color: #505050;
+    font-weight: 700;
+    text-align: right;
+    color: #fff;
+    border-radius: 10px;
+    float: right;
+}
+.save{
+    font-weight: 700;
+    text-align: right;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #e96780;
+    float: right;
+}
